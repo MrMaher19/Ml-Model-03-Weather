@@ -1,0 +1,16 @@
+    # Dhaka coordinates
+    dhaka = Point(23.8103, 90.4125, 23)
+    
+    start = datetime(2020, 12, 1)
+    end = datetime(2024, 12, 31)
+    
+    data = Daily(dhaka, start, end)
+    data = data.fetch()
+    
+    print(data)
+    data.to_csv("dhaka_weather_december_2024.csv")  
+
+
+# Importing Data:
+    df = pd.read_csv('dhaka_weather_december_2024.csv')
+    display(df.head())
