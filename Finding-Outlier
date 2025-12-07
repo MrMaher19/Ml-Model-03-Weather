@@ -1,0 +1,2 @@
+# Finding Outlier :
+    sns.boxplot(x="prcp",data=df) # Total rows in prcp column before remove outlier is : 1492
