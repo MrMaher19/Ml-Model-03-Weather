@@ -1,0 +1,11 @@
+# Visualization 01 :
+    plt.figure(figsize=(5, 3))
+    sns.scatterplot(data=df, x='tmax', y='wspd')
+    plt.title('Relationship between Maximum Temperature (tmax) and Wind Speed (wspd)')
+    plt.xlabel('Maximum Temperature (°C)')
+    plt.ylabel('Wind Speed (m/s)')
+
+
+# Visaulization 02 :
+    plt.figure(figsize=(4,3))
+    sns.scatterplot(x="tmax",y="pres",data=df)
